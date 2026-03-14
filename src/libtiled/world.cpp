@@ -368,7 +368,7 @@ bool World::save(World &world, QString *errorString)
     QFile file(world.fileName);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         if (errorString)
-            *errorString = tr("Could not open file for reading.");
+            *errorString = tr("Could not open file for writing.");
         return false;
     }
 
